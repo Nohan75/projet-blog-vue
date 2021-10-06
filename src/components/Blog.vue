@@ -36,7 +36,40 @@ export default {
                     title: 'About US',
                     compo: AboutUsVue
                 },
-            ]
+            ],
+
+            posts: [
+                {
+                    titre: "Titre article",
+                    intro: "Ceci est l'intro de l'article",
+                    date: new Date(),
+                },
+                {
+                    titre: "Titre article",
+                    intro: "Ceci est l'intro de l'article",
+                    date: new Date(),
+                },
+                {
+                    titre: "Titre article",
+                    intro: "Ceci est l'intro de l'article",
+                    date: new Date(),
+                },
+                {
+                    titre: "Titre article",
+                    intro: "Ceci est l'intro de l'article",
+                    date: new Date(),
+                },
+                {
+                    titre: "Titre article",
+                    intro: "Ceci est l'intro de l'article",
+                    date: new Date(),
+                },
+                {
+                    titre: "Titre article",
+                    intro: "Ceci est l'intro de l'article",
+                    date: new Date(),
+                },
+            ],
         }
     },
 

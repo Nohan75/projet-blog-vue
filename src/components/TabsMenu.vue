@@ -13,7 +13,7 @@ export default {
     name: 'TabMenu',
 
     props: {
-        links: { type: Object, default: () => []}
+        links: { type: Array, default: () => []}
     },
 
     methods: {

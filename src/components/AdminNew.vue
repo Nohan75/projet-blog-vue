@@ -41,10 +41,10 @@
             <div class="row">
                 <div class="col-sm-8"></div>
                 <div class="col-sm-1" v-if="titre == '' || auteur == '' || intro== '' || contenu == ''">
-                    <button class="btn btn-primary" disabled>Poster</button>
+                    <button class="btn btn-success" disabled>Poster</button>
                 </div>
                 <div class="col-sm-1" v-else>
-                    <button class="btn btn-primary">Poster</button>
+                    <button class="btn btn-success">Poster</button>
                 </div>
                 <div class="col-sm-3"></div>
             </div>

@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-1"><label for="auteur">Auteur:</label></div>
-                <div class="col-sm-3"><input class="form-control" name="auteur" type="text" placeholder="Auteur" v-model="auteur"></div>
+                <div class="col-sm-3"><input class="form-control" name="auteur" type="text" placeholder="Auteur" v-model="author"></div>
                 <div class="col-sm-6"></div>
             </div>
             <br>
@@ -41,11 +41,11 @@
         </form>
         <div class="row">
             <div class="col-sm-8"></div>
-            <div class="col-sm-1" v-if="titre == '' || auteur == '' || intro== '' || contenu == ''">
+            <div class="col-sm-1" v-if="titre == '' || author == '' || intro== '' || contenu == ''">
                 <button class="btn btn-outline-dark" disabled>Poster</button>
             </div>
             <div class="col-sm-1" v-else>
-                <button  class="btn btn-outline-dark" v-on:click="addArticle">Poster</button>
+                <button  class="btn btn-outline-dark" @click="addArticle(); resetForm()">Poster</button>
             </div>
             <div class="col-sm-3"></div>
         </div>
@@ -60,8 +60,9 @@ export default {
   },
   data(){
       return{
+          id: null,
           titre:'',
-          auteur:'',
+          author:'',
           intro:'',
           contenu:'',
           date:new Date()
@@ -69,7 +70,10 @@ export default {
   },
   methods:{
       addArticle(){
-          this.$store.commit('addArticle',{titre:this.titre, intro:this.intro, date:this.formDate, auteur:this.auteur, contenu:this.contenu})
+          this.$store.commit('addArticle',{id: this.getPosts.posts.length, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, contenu:this.contenu})
+      },
+      resetForm() {
+          this.titre = this.intro = this.date = this.author = this.contenu = ""
       }
   },
   computed: {
@@ -79,7 +83,10 @@ export default {
           let year = this.date.getYear();
 
           return `${day}/${month}/${year}`
-      }
+      },
+      getPosts() {
+        return this.$store.state.posts
+    },
   }
   
 };

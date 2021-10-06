@@ -40,6 +40,11 @@ const routes = [
         component: ()=> import('../components/AdminModify.vue')
       },
       {
+        path: '/modify/:id',
+        name: 'Modif',
+        component: () => import('../components/AdminModify.vue')
+      },
+      {
         path:"/suppr",
         name:"suppr",
         component: ()=> import('../components/AdminSuppr.vue')

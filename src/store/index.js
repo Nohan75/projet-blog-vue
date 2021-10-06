@@ -11,6 +11,10 @@ export default new Vuex.Store({
   mutations: {
     addArticle(state, data){
       state.posts.posts.push(data)
+    },
+    editPost(state, data){
+      console.log(data);
+      state.posts.posts[data.id] = data
     }
   },
   actions: {

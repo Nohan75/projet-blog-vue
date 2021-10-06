@@ -14,42 +14,6 @@
 
 export default {
   name: 'Home',
-  data() {
-    return {
-      posts: [
-        {
-          titre: 'Titre du post',
-          intro: 'Ceci est une intro de l\'article',
-          date: new Date(),
-        },
-        {
-          titre: 'Titre du post',
-          intro: 'Ceci est une intro de l\'article',
-          date: new Date(),
-        },
-        {
-          titre: 'Titre du post',
-          intro: 'Ceci est une intro de l\'article',
-          date: new Date(),
-        },
-        {
-          titre: 'Titre du post',
-          intro: 'Ceci est une intro de l\'article',
-          date: new Date(),
-        },
-        {
-          titre: 'Titre du post',
-          intro: 'Ceci est une intro de l\'article',
-          date: new Date(),
-        },
-        {
-          titre: 'Titre du post',
-          intro: 'Ceci est une intro de l\'article',
-          date: new Date(),
-        },
-      ],
-    }
-  },
   computed: {
     getPosts() {
       return this.$store.state.posts

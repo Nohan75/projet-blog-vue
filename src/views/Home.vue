@@ -1,9 +1,9 @@
 <template>
   <div class="container-fluid post-container">
-      <div class="card m-4 p-2" style="width: 70%" v-for="(post, index) in posts" :key="index">
-          <h3 class="card-title">  {{ post.titre }} </h3>
-          <p class="card-text">  {{ post.intro }} </p>
-          <p>  {{ post.date.getDate() }}/{{ post.date.getMonth() }}/{{ post.date.getYear() }} </p>
+      <div class="card m-4 p-2" style="width: 70%" v-for="(post, index) in getPosts.posts" :key="index">
+          <h3 class="card-title">  {{ getPosts.posts[index].titre }} </h3>
+          <p class="card-text">  {{ getPosts.posts[index].intro }} </p>
+          <p class="card-text"> {{ getPosts.posts[index].date }}  </p>
           <button class="btn btn-success">Lire +</button>
       </div>
   </div>
@@ -50,6 +50,11 @@ export default {
       ],
     }
   },
+  computed: {
+    getPosts() {
+      return this.$store.state.posts
+    }
+  }
 }
 </script>
 <style>

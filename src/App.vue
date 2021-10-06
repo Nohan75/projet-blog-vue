@@ -3,9 +3,9 @@
     <div id="nav">
       <h1>Blog</h1>
 
-        <router-link to="/Home">Home</router-link> |
+        <router-link to="/">Home</router-link> |
         <router-link to="/About">About US</router-link> |
-        <router-link to="/New">Admin</router-link>
+        <router-link to="/admin">Admin</router-link>
 
         <router-view></router-view>
     </div>

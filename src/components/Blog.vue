@@ -1,9 +1,10 @@
 <template>
     <div class="tabs">
         <h1>Blog</h1>
-        <TabsMenu :links="links" @changeTab="changeTab" />
 
-        <component :is="links[lastIndex].compo"></component>
+        <router-link to="/Home">Home</router-link>
+        <router-link to="/About">About US</router-link>
+        <router-link to="/New">Nouveau Post</router-link>
     </div>
 </template>
 
@@ -12,6 +13,7 @@ import TabsMenu from './TabsMenu.vue'
 import AboutUsVue from './AboutUs.vue'
 import AdminVue from './Admin.vue'
 import ListPostVue from './ListPost.vue'
+
  
 export default {
     name: 'Blog',

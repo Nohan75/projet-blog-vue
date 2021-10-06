@@ -90,12 +90,12 @@ export default {
   },
   computed: {
     formDate(){
-          let day = this.date.getDate() < 10 ? `0${this.date.getDate()}` : this.date.getDate();
-          let month = this.date.getMonth() < 10 ? `0${this.date.getMonth()}` : this.date.getMonth();
-          let year = this.date.getYear();
+        let day = this.date.getDate() < 10 ? `0${this.date.getDate()}` : this.date.getDate();
+        let month = this.date.getMonth() < 10 ? `0${this.date.getMonth()}` : this.date.getMonth();
+        let year = this.date.getYear();
 
-          return `${day}/${month}/${year}`
-      },
+        return `${day}/${month}/${year}`
+    },
     getPosts() {
         return this.$store.state.posts
     },

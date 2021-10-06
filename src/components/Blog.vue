@@ -1,83 +1,22 @@
 <template>
     <div class="tabs">
         <h1>Blog</h1>
-        <TabsMenu :links="links" @changeTab="changeTab" />
 
-        <component :is="links[lastIndex].compo"></component>
+        <router-link to="/Home">Home</router-link> |
+        <router-link to="/About">About US</router-link> |
+        <router-link to="/New">Admin</router-link>
+
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-import TabsMenu from './TabsMenu.vue'
-import AboutUsVue from './AboutUs.vue'
-import AdminVue from './Admin.vue'
-import ListPostVue from './ListPost.vue'
+
  
 export default {
     name: 'Blog',
 
     components: {
-        TabsMenu,
-    },
-
-    data() {
-        return {
-            lastIndex: 0,
-            links: [
-                {
-                    title: 'Admin',
-                    compo: AdminVue
-                },
-                {
-                    title: 'List Post',
-                    compo: ListPostVue
-                },
-                {
-                    title: 'About US',
-                    compo: AboutUsVue
-                },
-            ],
-
-            posts: [
-                {
-                    titre: "Titre article",
-                    intro: "Ceci est l'intro de l'article",
-                    date: new Date(),
-                },
-                {
-                    titre: "Titre article",
-                    intro: "Ceci est l'intro de l'article",
-                    date: new Date(),
-                },
-                {
-                    titre: "Titre article",
-                    intro: "Ceci est l'intro de l'article",
-                    date: new Date(),
-                },
-                {
-                    titre: "Titre article",
-                    intro: "Ceci est l'intro de l'article",
-                    date: new Date(),
-                },
-                {
-                    titre: "Titre article",
-                    intro: "Ceci est l'intro de l'article",
-                    date: new Date(),
-                },
-                {
-                    titre: "Titre article",
-                    intro: "Ceci est l'intro de l'article",
-                    date: new Date(),
-                },
-            ],
-        }
-    },
-
-    methods: {
-        changeTab(index) {
-            console.log('change tab', index)
-            this.lastIndex = index
-        }
     },
 
 

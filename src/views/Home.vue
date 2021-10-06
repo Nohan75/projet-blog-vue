@@ -26,5 +26,11 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
+  }
+
+  #btn{
+    background-color: bisque;
+    margin-left: 700px;
   }
 </style>

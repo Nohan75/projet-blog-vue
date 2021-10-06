@@ -1,0 +1,39 @@
+{
+    "posts": [
+        {
+        "titre": "Titre du post",
+        "intro": "Ceci est une intro de l'article",
+        "date": "16/09/2021"
+        },
+        {
+        "titre": "Titre du post",
+        "intro": "Ceci est une intro de l'article",
+        "date": "16/09/2021"
+        },
+        {
+        "titre": "Titre du post",
+        "intro": "Ceci est une intro de l'article",
+        "date": "16/09/2021"
+        },
+        {
+        "titre": "Titre du post",
+        "intro": "Ceci est une intro de l'article",
+        "date": "16/09/2021"
+        },
+        {
+        "titre": "Titre du post",
+        "intro": "Ceci est une intro de l'article",
+        "date": "16/09/2021"
+        },
+        {
+        "titre": "Titre du post",
+        "intro": "Ceci est une intro de l'article",
+        "date": "16/09/2021"
+        },
+        {
+        "titre": "Titre du post",
+        "intro": "Ceci est une intro de l'article",
+        "date": "16/09/2021"
+        }
+  ]
+}

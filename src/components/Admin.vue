@@ -19,14 +19,22 @@
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-1"><label for="intro">Introduction:</label></div>
-                <div class="col-sm-6"><textarea class="form-control" maxlength="70" rows="3" id="intro" name="intro" type="text" placeholder="Introduction" style="resize: none;" v-model="intro"></textarea></div>
+                <div class="col-sm-6">
+                    <textarea class="form-control" maxlength="70" rows="3" id="intro" name="intro" type="text" placeholder="Introduction" style="resize: none;" v-model="intro">
+                        <p></p>
+                    </textarea>
+                </div>
                 <div class="col-sm-3"></div>
             </div>
             <br>
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-1"><label for="contenu">Contenu:</label></div>
-                <div class="col-sm-6"><textarea class="form-control" id="contenu" rows="14" name="contenu" type="text" placeholder="Contenu" style="resize: none;" v-model="contenu" ></textarea></div>
+                <div class="col-sm-6">
+                    <textarea class="form-control" id="contenu" rows="14" name="contenu" type="text" placeholder="Contenu" style="resize: none;" v-model="contenu" >
+                        <p></p>
+                    </textarea>
+                </div>
                 <div class="col-sm-3"></div>
             </div>
             <br>
@@ -48,6 +56,9 @@
 <script>
 export default {
   name: "Admin",
+  props:{
+
+  },
   data(){
       return{
           titre:'',

@@ -5,7 +5,7 @@
         <router-link to="/modify">Modify</router-link> | 
         <router-link to="/suppr">Supprimé</router-link>
         <router-view> </router-view>
-    </div>gi
+    </div>
   
 </template>
 

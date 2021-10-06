@@ -4,7 +4,7 @@
           <h3 class="card-title">  {{ post.titre }} </h3>
           <p class="card-text">  {{ post.intro }} </p>
           <p>  {{ post.date.getDate() }}/{{ post.date.getMonth() }}/{{ post.date.getYear() }} </p>
-          <button class="btn btn-success">Lire +</button>
+          <button id="btn" class="btn btn-outline-dark">Lire +</button>
       </div>
   </div>
 </template>
@@ -57,5 +57,11 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
+  }
+
+  #btn{
+    background-color: bisque;
+    margin-left: 700px;
   }
 </style>

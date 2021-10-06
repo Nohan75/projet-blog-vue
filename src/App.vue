@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <div id="nav">
       <h1>Blog</h1>
+    <div id="nav">
 
-        <router-link to="/">Home</router-link> |
-        <router-link to="/About">About US</router-link> |
-        <router-link to="/admin">Admin</router-link>
+        <router-link id="home" to="/"> HOME </router-link> |
+        <router-link id="about" to="/About"> ABOUT US </router-link> |
+        <router-link id="admin" to="/admin"> ADMIN </router-link>
 
         <router-view></router-view>
     </div>
@@ -13,16 +13,46 @@
 </template>
 
 <style>
+#home:hover{
+  font-size: 20px;
+}
+
+#about:hover{
+  font-size: 20px;
+}
+
+#admin:hover{
+  font-size: 20px;
+}
+
+#home{
+  margin-right: 5px;
+}
+
+#about{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#admin{
+  margin-left: 5px;
+}
+
+h1{
+  color: bisque;
+  padding: 30px;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Gill Sans";
   text-align: center;
   color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px;
+  font-family: "Gill Sans";
+
 }
 
 #nav a {
@@ -31,6 +61,7 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: bisque;
+  margin-top: 40px;
 }
 </style>

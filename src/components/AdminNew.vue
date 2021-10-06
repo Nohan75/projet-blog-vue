@@ -69,7 +69,16 @@ export default {
   },
   methods:{
       addArticle(){
-          this.$store.commit('addArticle',{titre:this.titre, intro:this.intro, date:this.date, auteur:this.auteur, contenu:this.contenu})
+          this.$store.commit('addArticle',{titre:this.titre, intro:this.intro, date:this.formDate, auteur:this.auteur, contenu:this.contenu})
+      }
+  },
+  computed: {
+      formDate(){
+          let day = this.date.getDate() < 10 ? `0${this.date.getDate()}` : this.date.getDate();
+          let month = this.date.getMonth() < 10 ? `0${this.date.getMonth()}` : this.date.getMonth();
+          let year = this.date.getYear();
+
+          return `${day}/${month}/${year}`
       }
   }
   

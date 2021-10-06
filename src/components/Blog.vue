@@ -1,5 +1,6 @@
 <template>
     <div class="tabs">
+        <h1>Blog</h1>
         <TabsMenu :links="links" @changeTab="changeTab" />
 
         <component :is="links[lastIndex].compo"></component>

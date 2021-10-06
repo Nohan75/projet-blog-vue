@@ -1,7 +1,7 @@
 <template>
     <div class="menu">
         <nav>
-            <button v-for="(link, index) in links" :key="index" @click="clickLink(index)">
+            <button class="btn btn-primary m-4" v-for="(link, index) in links" :key="index" @click="clickLink(index)">
                 {{ link.title }}
             </button>
         </nav>

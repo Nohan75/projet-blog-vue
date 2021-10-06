@@ -37,19 +37,18 @@
                 </div>
                 <div class="col-sm-3"></div>
             </div>
-            <br>
-            <div class="row">
-                <div class="col-sm-8"></div>
-                <div class="col-sm-1" v-if="titre == '' || auteur == '' || intro== '' || contenu == ''">
-                    <button class="btn btn-outline-dark" disabled>Poster</button>
-                </div>
-                <div class="col-sm-1" v-else>
-                    <button id="btn" class="btn btn-outline-dark">Poster</button>
-                </div>
-                <div class="col-sm-3"></div>
-            </div>
-            
+            <br> 
         </form>
+        <div class="row">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-1" v-if="titre == '' || auteur == '' || intro== '' || contenu == ''">
+                <button class="btn btn-outline-dark" disabled>Poster</button>
+            </div>
+            <div class="col-sm-1" v-else>
+                <button  class="btn btn-outline-dark" v-on:click="addArticle">Poster</button>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
     </div>
   </div>
 </template>
@@ -64,14 +63,21 @@ export default {
           titre:'',
           auteur:'',
           intro:'',
-          contenu:''
+          contenu:'',
+          date:new Date()
+      }
+  },
+  methods:{
+      addArticle(){
+          this.$store.commit('addArticle',{titre:this.titre, intro:this.intro, date:this.date, auteur:this.auteur, contenu:this.contenu})
       }
   }
+  
 };
 </script>
 
 <style>
-    #btn{
+    .btn{
     background-color: bisque;
     }
 </style>

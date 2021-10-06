@@ -9,6 +9,9 @@ export default new Vuex.Store({
     posts: articles
   },
   mutations: {
+    addArticle(state, data){
+      state.posts.posts.push(data)
+    }
   },
   actions: {
   },

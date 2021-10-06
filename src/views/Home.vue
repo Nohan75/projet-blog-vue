@@ -4,7 +4,7 @@
           <h3 class="card-title">  {{ getPosts.posts[index].titre }} </h3>
           <p class="card-text">  {{ getPosts.posts[index].intro }} </p>
           <p class="card-text"> {{ getPosts.posts[index].date }}  </p>
-          <button class="btn btn-success">Lire +</button>
+          <router-link :to="`/article/${index}`"> <button class="btn btn-success">Lire +</button>  </router-link>
       </div>
   </div>
 </template>

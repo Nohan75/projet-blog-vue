@@ -3,7 +3,9 @@
         {
         "titre": "Titre du post",
         "intro": "Ceci est une intro de l'article",
-        "date": "16/09/2021"
+        "date": "16/09/2021",
+        "author": "M. Lorem Ipsum",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat temporibus laboriosam reiciendis. Qui necessitatibus tempore laboriosam aliquid quibusdam rem earum laborum fugiat blanditiis pariatur! Saepe, reiciendis? Rem molestias autem quae optio obcaecati explicabo, quibusdam repellendus nobis aut sit suscipit nisi, vel voluptatum necessitatibus aperiam."
         },
         {
         "titre": "Titre du post",

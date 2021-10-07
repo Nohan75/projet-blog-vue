@@ -13,7 +13,7 @@ export default new Vuex.Store({
       state.posts.posts.push(data)
     },
     editPost(state, data){
-      state.posts.posts[data.id] = data
+      Vue.set(state.posts.posts, data.id, data)
     },
     removePostById(state, index){
       state.posts.posts.splice(index, 1)

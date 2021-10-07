@@ -89,6 +89,7 @@ export default {
           // this.selectPost(this.id)
           this.resetForm()
         })
+      
     },
     resetForm() {
       this.titre = this.intro = this.date = this.author = this.contenu = ""
@@ -96,7 +97,8 @@ export default {
   },
   computed: {
     formDate(){
-        let day = this.date.getDate() < 10 ? `0${this.date.getDate()}` : this.date.getDate();
+
+        let day = this.date.getDay() < 10 ? `0${this.date.getDay()}` : this.date.getDay();
         let month = this.date.getMonth() < 10 ? `0${this.date.getMonth()}` : this.date.getMonth();
         let year = this.date.getYear();
 

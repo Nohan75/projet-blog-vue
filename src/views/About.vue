@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+<!-- About generer aleatoirement -->
+  <div class="container" style="margin-top:170px">
     <div class="row" style="padding-top: 10px">
       <div class="col-sm-1"></div>
-
       <div class="col-sm-3" style="margin-top: auto; margin-bottom: auto">
         <div
           class="border border-secondary"
@@ -28,7 +28,6 @@
       </div>
 
       <div class="col-sm-1"></div>
-
       <div class="col-sm-6">
         <p
           class="border border-secondary"
@@ -64,6 +63,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: "About",
@@ -71,7 +71,4 @@ export default {
 </script>
 
 <style>
-  #about{
-    margin-top: 100px;
-  }
 </style>

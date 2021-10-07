@@ -1,4 +1,5 @@
 <template>
+    <!-- afficher un seul post, quand on click sur 'Lire +' -->
     <div id="postSimple">
         <div class="card">
             <h1 class="card-title"> {{ getPosts.posts[getId].titre }} </h1>
@@ -9,28 +10,28 @@
         </div>
     </div>
 </template>
+
 <script>
-// import MarkViewer from './MarkViewer.vue'
 import Marked from 'marked'
+
 const marked = Marked.default;
+
 export default {
-    // components: {
-    //     MarkViewer,
-    // },
     name: 'SinglePost',
+
     computed: {
         getPosts() {
             return this.$store.state.posts
         },
+
         getId() {
             return this.$route.params.id
         },
+
         markContent() {
             return marked(this.getPosts.posts[this.getId].content)
-        }
-        
-    }
-    
+        }   
+    }   
 }
 </script>
 
@@ -43,5 +44,4 @@ export default {
         color: bisque;
         text-decoration: underline;
     }
-
 </style>

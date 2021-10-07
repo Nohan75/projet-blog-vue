@@ -1,16 +1,15 @@
 
 <template>
+<!-- Sous menu sous le ADMIN -->
     <div id="nav">
         <router-link id="add" to="/add">Add</router-link> | 
         <router-link id="modif" to="/modify">Modify</router-link> | 
         <router-link id="supp" to="/suppr">Delete</router-link>
         <router-view> </router-view>
     </div>
-  
 </template>
 
 <script>
-
 export default {
     name:"Admin"
 }

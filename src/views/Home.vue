@@ -1,4 +1,5 @@
 <template>
+<!-- affiche tout les post -->
   <div class="container-fluid post-container">
       <div id="post" class="card m-4 p-2" v-for="(post, index) in getPosts.posts" :key="index">
           <h3 class="card-title">  {{ getPosts.posts[index].titre }} </h3>
@@ -8,12 +9,12 @@
       </div>
   </div>
 </template>
-
 <script>
 // @ is an alias to /src
 
 export default {
   name: 'Home',
+  
   computed: {
     getPosts() {
       return this.$store.state.posts

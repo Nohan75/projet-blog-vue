@@ -1,17 +1,24 @@
 <template>
   <div>
+    <!-- Afficher tout les post suivit d'un bouton EDIT -->
       <div v-for="(post, index) in getPosts.posts" :key="index">
-        <p class="get"> 
-          <span> {{ getPosts.posts[index].titre }} </span> | 
-          <span> {{ getPosts.posts[index].author }} </span> | 
-          <span> {{ getPosts.posts[index].date }} </span>
-          <button @click="selectPost(index)" class="btn btn-dark">édit</button>
-        </p>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-7" style="margin-top:20px">
+            <span> {{ getPosts.posts[index].titre }} </span> | 
+            <span> {{ getPosts.posts[index].author }} </span> | 
+            <span> {{ getPosts.posts[index].date }} </span> 
+          </div>
+          <div class="col-sm-2">
+            <button id="btnEditPost" @click="selectPost(index)" class="btn btn-dark">édit</button>
+          </div>
+        </div> 
       </div>
     <div class="container">
     <div class="row">
         <form>
-            <div class="row">
+          <!-- Formulaire d'édition + Preview du post en MarkDown -->
+            <div class="row" style="margin-top:50px">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-1"><label for="titre"> <span class="label"> Titre:</span></label></div>
                 <div class="col-sm-3"><input class="form-control" name="titre" type="text" placeholder="Titre" v-model="titre"></div>
@@ -43,7 +50,6 @@
                     <textarea class="form-control" id="contenu" rows="14" name="contenu" type="text" placeholder="Contenu" style="resize: none;" v-model="contenu" >
                         <p></p>
                     </textarea>
-                    
                 </div>
                 <div class="col-sm-3"> <MarkViewer /> </div>
             </div>
@@ -60,25 +66,18 @@
             <div class="col-sm-3"></div>
         </div>
     </div>
-    
     </div>
-    <!-- <div class="row">
-      <div class="col-6">
-        <MarkEditor />
-      </div>
-      <div class="col-6">
-        <MarkViewer />
-      </div>
-    </div> -->
   </div>
 </template>
 
 <script>
 import MarkViewer from './MarkViewer.vue'
+
 export default {
   components: {
     MarkViewer
   },
+
   data() {
     return {
       id: null,
@@ -88,10 +87,12 @@ export default {
       date: new Date(),
     }
   },
+
   methods: {
     newDate(){
       this.date = new Date()
     },
+
     selectPost(index) {
       this.id = index
       this.titre = this.getPosts.posts[index].titre
@@ -100,6 +101,7 @@ export default {
       this.contenu = this.getPosts.posts[index].content
       this.newDate()
     },
+
     editPost(){
       this.$store.dispatch('editPost',{id: this.id, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, content:this.contenu})
         .then(() => {
@@ -108,11 +110,14 @@ export default {
         })
       
     },
+
     resetForm() {
       this.titre = this.intro = this.date = this.author = this.contenu = ""
     }
   },
+
   computed: {
+    //recuperer et formater date
     formDate(){
         this.newDate()
         let day = this.date.getDate() < 10 ? `0${this.date.getDate()}` : this.date.getDate();
@@ -121,9 +126,13 @@ export default {
 
         return `${day}/${month}/${year}`
     },
+
+    //recuperer le post avec VueEX
     getPosts() {
         return this.$store.state.posts
     },
+
+    //recuperer l'index  
     getId() {
         return this.$route.params.id
     },
@@ -132,6 +141,7 @@ export default {
       get() {
 				return this.$store.state.markText
 			},
+      
 			set(value) {
 				this.$store.commit('setMarkText', value)
 			}
@@ -142,4 +152,8 @@ export default {
 </script>
 
 <style> 
+  #btnEditPost{
+    background-color : bisque;
+    color: black;
+  }
 </style>

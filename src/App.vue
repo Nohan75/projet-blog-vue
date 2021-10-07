@@ -1,4 +1,5 @@
 <template>
+<!-- menu du blog -->
   <div id="app">
     <div id="nav">
         <router-link id="home" to="/"> HOME </router-link> | 

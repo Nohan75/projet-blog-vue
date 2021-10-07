@@ -1,12 +1,11 @@
 <template>
-  <div>
-      Suppr
+  <div id="supp">
       <div v-for="(post, index) in getPosts.posts" :key="index">
         <p>
           <span> {{ getPosts.posts[index].titre }} </span> | 
           <span> {{ getPosts.posts[index].author }} </span> | 
           <span> {{ getPosts.posts[index].date }} </span>
-          <button @click="supprPost(index)" class="btn btn-danger">supprimer</button>
+          <button id="btn" @click="supprPost(index)" class="btn btn-dark">X</button>
         </p>
       </div>
   </div>
@@ -42,5 +41,11 @@ export default {
 </script>
 
 <style>
+#btn{
+  color: black;
+}
 
+.template{
+    font-size: 16px;
+}
 </style>

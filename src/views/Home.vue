@@ -1,10 +1,10 @@
 <template>
   <div class="container-fluid post-container">
-      <div class="card m-4 p-2" style="width: 70%" v-for="(post, index) in getPosts.posts" :key="index">
+      <div id="post" class="card m-4 p-2" v-for="(post, index) in getPosts.posts" :key="index">
           <h3 class="card-title">  {{ getPosts.posts[index].titre }} {{ index }} </h3>
           <p class="card-text">  {{ getPosts.posts[index].intro }} </p>
           <p class="card-text"> {{ getPosts.posts[index].date }}  </p>
-          <router-link :to="`/article/${index}`"> <button class="btn btn-success">Lire +</button>  </router-link>
+          <router-link :to="`/article/${index}`"> <button class="btn btn-outline-dark">Lire +</button>  </router-link>
       </div>
   </div>
 </template>
@@ -21,7 +21,13 @@ export default {
   }
 }
 </script>
+
 <style>
+  #post{
+    width: 70%;
+    background-color: bisque;    
+  }
+
   .post-container{
     display: flex;
     flex-wrap: wrap;

@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-      <h1>Blog</h1>
     <div id="nav">
-
-        <router-link id="home" to="/"> HOME </router-link> |
-        <router-link id="about" to="/About"> ABOUT US </router-link> |
-        <router-link id="admin" to="/admin"> ADMIN </router-link>
+        <router-link id="home" to="/"> HOME </router-link> | 
+        <router-link id="admin" to="/admin"> ADMIN </router-link> |
+        <router-link id="about" to="/About"> ABOUT US </router-link>
 
         <router-view></router-view>
     </div>
@@ -38,11 +36,6 @@
   margin-left: 5px;
 }
 
-h1{
-  color: bisque;
-  padding: 30px;
-}
-
 #app {
   font-family: "Gill Sans";
   text-align: center;
@@ -52,7 +45,6 @@ h1{
 #nav {
   padding: 10px;
   font-family: "Gill Sans";
-
 }
 
 #nav a {

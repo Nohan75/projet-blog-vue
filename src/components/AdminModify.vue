@@ -1,12 +1,11 @@
 <template>
-  <div>
-      Modify
+  <div id="modif">
       <div v-for="(post, index) in getPosts.posts" :key="index">
         <p>
           <span> {{ getPosts.posts[index].titre }} </span> | 
           <span> {{ getPosts.posts[index].author }} </span> | 
           <span> {{ getPosts.posts[index].date }} </span>
-          <button @click="selectPost(index)" class="btn btn-primary">éditer</button>
+          <button @click="selectPost(index)" class="btn btn-dark">édit</button>
         </p>
       </div>
       <div class="container">
@@ -52,10 +51,10 @@
         <div class="row">
             <div class="col-sm-8"></div>
             <div class="col-sm-1" v-if="titre == '' || author == '' || intro== '' || contenu == ''">
-                <button class="btn btn-outline-dark" disabled>Editer</button>
+                <button class="btn btn-outline-dark" disabled>Edit</button>
             </div>
             <div class="col-sm-1" v-else>
-                <button  class="btn btn-outline-dark" @click="editPost">Editer</button>
+                <button  class="btn btn-outline-dark" @click="editPost">Edit</button>
             </div>
             <div class="col-sm-3"></div>
         </div>
@@ -108,5 +107,4 @@ export default {
 </script>
 
 <style>
-
 </style>

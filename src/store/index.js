@@ -6,7 +6,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    posts: articles
+    posts: articles,
+    markText: ''
   },
   mutations: {
     addArticle(state, data){
@@ -17,6 +18,9 @@ export default new Vuex.Store({
     },
     removePostById(state, index){
       state.posts.posts.splice(index, 1)
+    },
+    setMarkText(state, value){
+      state.markText = value
     }
   },
   actions: {

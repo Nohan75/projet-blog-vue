@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="delList">
       <div v-for="(post, index) in getPosts.posts" :key="index">
         <p>
           <span> {{ getPosts.posts[index].titre }} </span> | 
@@ -47,5 +47,9 @@ export default {
 
   .template{
       font-size: 16px;
+  }
+
+  #delList{
+    margin-top: 70px;
   }
 </style>

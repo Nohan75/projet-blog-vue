@@ -69,5 +69,9 @@ export default {
   name: "About",
 };
 </script>
+
 <style>
+  #about{
+    margin-top: 100px;
+  }
 </style>

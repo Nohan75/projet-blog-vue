@@ -85,7 +85,14 @@ export default {
       this.contenu = this.getPosts.posts[index].content
     },
     editPost(){
-      this.$store.commit('editPost',{id: this.id, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, contenu:this.contenu})
+      this.$store.dispatch('editPost',{id: this.id, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, content:this.contenu})
+        .then(() => {
+          // this.selectPost(this.id)
+          this.resetForm()
+        })
+    },
+    resetForm() {
+      this.titre = this.intro = this.date = this.author = this.contenu = ""
     }
   },
   computed: {

@@ -70,7 +70,7 @@ export default {
   },
   methods:{
       addArticle(){
-          this.$store.commit('addArticle',{id: this.getPosts.posts.length, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, contenu:this.contenu})
+          this.$store.dispatch('addArticle',{id: this.getPosts.posts.length, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, content:this.contenu})
           alert('Post Ajouter')
       },
       resetForm() {

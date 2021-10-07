@@ -13,7 +13,6 @@ export default new Vuex.Store({
       state.posts.posts.push(data)
     },
     editPost(state, data){
-      console.log(data);
       state.posts.posts[data.id] = data
     },
     removePostById(state, index){
@@ -21,10 +20,16 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    addArticle(context, data){
+      context.commit('addArticle', data)
+    },
     removePostById(context, id){
       id = parseInt(id)
       const index = context.state.posts.posts.findIndex((post) => { return post.id == id })
       context.commit('removePostById', index)
+    },
+    editPost(context, data){
+      context.commit('editPost', data)
     }
   },
   modules: {

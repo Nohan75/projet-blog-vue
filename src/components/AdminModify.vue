@@ -43,8 +43,9 @@
                     <textarea class="form-control" id="contenu" rows="14" name="contenu" type="text" placeholder="Contenu" style="resize: none;" v-model="contenu" >
                         <p></p>
                     </textarea>
+                    
                 </div>
-                <div class="col-sm-3"></div>
+                <div class="col-sm-3"> <MarkViewer /> </div>
             </div>
             <br> 
         </form>
@@ -59,19 +60,31 @@
             <div class="col-sm-3"></div>
         </div>
     </div>
+    
     </div>
+    <!-- <div class="row">
+      <div class="col-6">
+        <MarkEditor />
+      </div>
+      <div class="col-6">
+        <MarkViewer />
+      </div>
+    </div> -->
   </div>
 </template>
 
 <script>
+import MarkViewer from './MarkViewer.vue'
 export default {
+  components: {
+    MarkViewer
+  },
   data() {
     return {
       id: null,
       titre: '',
       author:'',
       intro:'',
-      contenu:'',
       date: new Date(),
     }
   },
@@ -114,6 +127,15 @@ export default {
     getId() {
         return this.$route.params.id
     },
+    
+    contenu: {
+      get() {
+				return this.$store.state.markText
+			},
+			set(value) {
+				this.$store.commit('setMarkText', value)
+			}
+    }
   }
 
 }

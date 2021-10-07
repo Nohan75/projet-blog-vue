@@ -1,5 +1,5 @@
 <template>
-  <div id="supp">
+  <div>
       <div v-for="(post, index) in getPosts.posts" :key="index">
         <p>
           <span> {{ getPosts.posts[index].titre }} </span> | 
@@ -41,11 +41,11 @@ export default {
 </script>
 
 <style>
-#btn{
-  color: black;
-}
+  #btn{
+    color: black;
+  }
 
-.template{
-    font-size: 16px;
-}
+  .template{
+      font-size: 16px;
+  }
 </style>

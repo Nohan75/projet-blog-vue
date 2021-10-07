@@ -17,24 +17,24 @@ export default {
 </script>
 
 <style>
-#add:hover{
-    font-size: 20px;
-}
+    #add:hover{
+        font-size: 20px;
+    }
 
-#modif:hover{
-    font-size: 20px;
-}
+    #modif:hover{
+        font-size: 20px;
+    }
 
-#supp:hover{
-    font-size: 20px;
-}
+    #supp:hover{
+        font-size: 20px;
+    }
 
-#nav a.router-link-exact-active {
-    color: bisque;
-    margin-top: 40px;
-}
+    #nav a.router-link-exact-active {
+        color: bisque;
+        margin-top: 40px;
+    }
 
-#nav{
-  padding: 10px;
-}
+    #nav{
+    padding: 10px;
+    }
 </style>

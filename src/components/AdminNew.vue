@@ -69,19 +69,25 @@ export default {
       }
   },
   methods:{
+      newDate(){
+          this.date = new Date()
+      },
+
       addArticle(){
           this.$store.dispatch('addArticle',{id: this.getPosts.posts.length, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, content:this.contenu})
           alert('Post Ajouter')
       },
+
       resetForm() {
           this.titre = this.intro = this.date = this.author = this.contenu = ""
       }
   },
   computed: {
       formDate(){
+          this.newDate()
           let day = this.date.getDate() < 10 ? `0${this.date.getDate()}` : this.date.getDate();
-          let month = this.date.getMonth() < 10 ? `0${this.date.getMonth()}` : this.date.getMonth();
-          let year = this.date.getYear();
+          let month = this.date.getMonth() +1 < 10 ? `0${this.date.getMonth()}` : this.date.getMonth() +1;
+          let year = this.date.getFullYear();
 
           return `${day}/${month}/${year}`
       },

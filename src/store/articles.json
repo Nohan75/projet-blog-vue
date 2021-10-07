@@ -10,7 +10,7 @@
         },
         {
         "id": 1,
-        "titre": "Quel jeu choisir ?",
+        "titre": "Quel jeu choisir ? Jeux de combats",
         "intro": "j'aimerais me mettre aux jeux de combats, j'ai apprécié Super Smash bros sur switch mais je préférais quelque chose de plus réaliste.",
         "date": "06/09/2021",
         "author": "La street du 78",
@@ -18,7 +18,7 @@
         },
         {
           "id": 2,
-          "titre": "Call of Duty Warzone, saison 6 Black Ops :",
+          "titre": "Call of Duty Warzone, saison 6 Black Ops",
           "intro": "Emplacements et carte des bunkers de la Seconde Guerre Mondiale",
           "date": "16/09/2021",
           "author": "Soluce Jeux",
@@ -26,7 +26,7 @@
           },
         {
         "id": 3,
-        "titre": "manette Xbox",
+        "titre": "Manette Xbox",
         "intro": "Xbox : Microsoft tease une nouvelle manette pour les 20 ans de la console !",
         "date": "16/09/2021",
         "author": "Theodore du matin",
@@ -46,6 +46,14 @@
         "date": "06/10/2021",
         "author": "Arnaud le plus beau",
         "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat temporibus laboriosam reiciendis. Qui necessitatibus tempore laboriosam aliquid quibusdam rem earum laborum fugiat blanditiis pariatur! Saepe, reiciendis? Rem molestias autem quae optio obcaecati explicabo, quibusdam repellendus nobis aut sit suscipit nisi, vel voluptatum necessitatibus aperiam."
+        },
+        {
+        "id": 6,
+        "titre": "Game of Thrones",
+        "intro": "promotion sur la collection officielle",
+        "date": "06/10/2021",
+        "author": "GoT forever",
+        "content": "GOT : -20% CHEZ ZAVVI SUR L’ENSEMBLE DES ACCESSOIRES ET DES PRODUITS DÉRIVÉS DE LA SÉRIE. Des calices à la réplique du Trône de Fer en bronze en passant par les magnets pour frigo, il y a de quoi contenter les fans de tous poils de cette série. En plus, cette selection bénéficie d’une réduction de -20% avec le code GOT20."
         }
         
   ]

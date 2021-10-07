@@ -72,16 +72,20 @@ export default {
       author:'',
       intro:'',
       contenu:'',
-      date:new Date()
+      date: new Date(),
     }
   },
   methods: {
+    newDate(){
+      this.date = new Date()
+    },
     selectPost(index) {
       this.id = index
       this.titre = this.getPosts.posts[index].titre
       this.author = this.getPosts.posts[index].author
       this.intro = this.getPosts.posts[index].intro
       this.contenu = this.getPosts.posts[index].content
+      this.newDate()
     },
     editPost(){
       this.$store.dispatch('editPost',{id: this.id, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, content:this.contenu})
@@ -97,10 +101,10 @@ export default {
   },
   computed: {
     formDate(){
-
-        let day = this.date.getDay() < 10 ? `0${this.date.getDay()}` : this.date.getDay();
-        let month = this.date.getMonth() < 10 ? `0${this.date.getMonth()}` : this.date.getMonth();
-        let year = this.date.getYear();
+        this.newDate()
+        let day = this.date.getDate() < 10 ? `0${this.date.getDate()}` : this.date.getDate();
+        let month = this.date.getMonth() + 1 < 10 ? `0${this.date.getMonth()}` : this.date.getMonth() + 1;
+        let year = this.date.getFullYear();
 
         return `${day}/${month}/${year}`
     },

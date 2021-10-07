@@ -2,50 +2,49 @@
     "posts": [
         {
         "id": 0,
-        "titre": "Titre du post",
-        "intro": "Ceci est une intro de l'article",
+        "titre": "Formation développeur VueJS",
+        "intro": "Cette formation demande des notions d'algorithmique (if, for,...), des notions de JavaScript et des notions de programmation orienté objet.",
         "date": "16/09/2021",
-        "author": "M. Lorem Ipsum",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat temporibus laboriosam reiciendis. Qui necessitatibus tempore laboriosam aliquid quibusdam rem earum laborum fugiat blanditiis pariatur! Saepe, reiciendis? Rem molestias autem quae optio obcaecati explicabo, quibusdam repellendus nobis aut sit suscipit nisi, vel voluptatum necessitatibus aperiam."
+        "author": "pov: Vue.js c'est du lourd",
+        "content": "Cette suite de tutoriel permettra aux développeurs frontend, de se former de A à Z sur le framework javascript vueJS. Cette formation vuejs est accessible à tous les développeurs. Elle permettra de voir comment installer vuejs et comment apprendre à développer avec ce magnifique framework javascript facile et rapide à prendre en main. Vous verrez tout au long de cette formation comment créer une application. Vous installerez d'abord votre environnement de développement puis vous ferez 2 petits exercices pour appréhender le framework globalement. Vous découvrirez ensuite chaque composant pettit à petit, qu'est ce qu'une instance vueJS, quelles sont les différentes propriétés, comment utiliser les fonction que vous avez l'habitude d'utiliser sur les autres frameworks."
         },
         {
         "id": 1,
-        "titre": "Titre du post",
-        "intro": "Ceci est une intro de l'article",
-        "date": "16/09/2021",
-        "author": "M. Lorem Ipsum",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat temporibus laboriosam reiciendis. Qui necessitatibus tempore laboriosam aliquid quibusdam rem earum laborum fugiat blanditiis pariatur! Saepe, reiciendis? Rem molestias autem quae optio obcaecati explicabo, quibusdam repellendus nobis aut sit suscipit nisi, vel voluptatum necessitatibus aperiam."
+        "titre": "Quel jeu choisir ?",
+        "intro": "j'aimerais me mettre aux jeux de combats, j'ai apprécié Super Smash bros sur switch mais je préférais quelque chose de plus réaliste.",
+        "date": "06/09/2021",
+        "author": "La street du 78",
+        "content": "j'aimerais me mettre aux jeux de combats, j'ai apprécié Super Smash bros sur switch mais je préférais quelque chose de plus réaliste. Du coup je me tourne vers vous les spécialistes pour me conseiller ? J'aime beaucoup la compétition et les jeux où on deviens meilleur après beaucoup d'entraînement (style CS GO).Et j'hésite entre Injustice, Mk, ou Guilty Gear Strive qui a l'air super sympa.Merci d'avance pour votre aide !."
         },
         {
-        "id": 2,
-        "titre": "Titre du post",
-        "intro": "Ceci est une intro de l'article",
-        "date": "16/09/2021",
-        "author": "M. Lorem Ipsum",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat temporibus laboriosam reiciendis. Qui necessitatibus tempore laboriosam aliquid quibusdam rem earum laborum fugiat blanditiis pariatur! Saepe, reiciendis? Rem molestias autem quae optio obcaecati explicabo, quibusdam repellendus nobis aut sit suscipit nisi, vel voluptatum necessitatibus aperiam."
-        },
+          "id": 2,
+          "titre": "Call of Duty Warzone, saison 6 Black Ops :",
+          "intro": "Emplacements et carte des bunkers de la Seconde Guerre Mondiale",
+          "date": "16/09/2021",
+          "author": "Soluce Jeux",
+          "content": "Ça y est la nouvelle mise a jour de Warzone vient d'arriver sur nos pc et consoles il y a quelques instants de cela ! Parmi les nouveautés, on voit que des bunkers de la Seconde Guerre Mondiale viennent de mystérieusement faire leur apparition. On vous aide à les trouver dans cet article."
+          },
         {
         "id": 3,
-        "titre": "Titre du post",
-        "intro": "Ceci est une intro de l'article",
+        "titre": "manette Xbox",
+        "intro": "Xbox : Microsoft tease une nouvelle manette pour les 20 ans de la console !",
         "date": "16/09/2021",
-        "author": "M. Lorem Ipsum",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat temporibus laboriosam reiciendis. Qui necessitatibus tempore laboriosam aliquid quibusdam rem earum laborum fugiat blanditiis pariatur! Saepe, reiciendis? Rem molestias autem quae optio obcaecati explicabo, quibusdam repellendus nobis aut sit suscipit nisi, vel voluptatum necessitatibus aperiam."
-        },
+        "author": "Theodore du matin",
+        "content": "Très bientôt, cela fera vingt ans que la première Xbox est sortie dans le commerce. Un véritable événement que Microsoft compte bien fêter avec, visiblement, une nouvelle manette qui devrait régaler les fans."},
         {
         "id": 4,
-        "titre": "Titre du post",
-        "intro": "Ceci est une intro de l'article",
+        "titre": "Kōichi Sugiyama : La saga Dragon Quest endeuillée",
+        "intro": "Kōichi Sugiyama était le doyen des compositeurs de musique de jeu vidéo. Le Japonais de 90 ans est décédé, après avoir laissé derrière lui une Œuvre qui a marqué notre média.",
         "date": "16/09/2021",
-        "author": "M. Lorem Ipsum",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat temporibus laboriosam reiciendis. Qui necessitatibus tempore laboriosam aliquid quibusdam rem earum laborum fugiat blanditiis pariatur! Saepe, reiciendis? Rem molestias autem quae optio obcaecati explicabo, quibusdam repellendus nobis aut sit suscipit nisi, vel voluptatum necessitatibus aperiam."
+        "author": "Allan le pro",
+        "content": "Kōichi Sugiyama avait commencé sa carrière à la fin des années 1950, en composant des musiques pour la télévision : séries animées, publicités, etc ... Au début des années 1980, il écrit une lettre de fan à l'éditeur Enix. Ce dernier demandera à Sugiyama de composer pour ses jeux, en commençant par World Golf en 1985. Mais dès 1986, il travaille sur le projet qui changera sa vie : Dragon Quest. Le nouveau titre d'Enix changera la donne du RPG au Japon et celle de la musique dans le jeu vidéo. Grâce à Sugiyama, on comprend que les grandes compositions classiques fonctionnent, même sur des consoles avec des puces sons médiocres."
         },
         {
         "id": 5,
-        "titre": "Titre du post",
-        "intro": "Ceci est une intro de l'article",
-        "date": "16/09/2021",
-        "author": "M. Lorem Ipsum",
+        "titre": "LoL : Le patch 11.21 est arrivé sur les serveurs de test, les détails",
+        "intro": "Alors que les Worlds ont commencé, Riot continue de travailler sur son titre, et a récemment déployé un nouveau patch sur les serveurs PBE (public beta environment). Au programme, de nouvelles animations de sorts pour Syndra et de nouveaux skins pour quelques personnages. ",
+        "date": "06/10/2021",
+        "author": "Arnaud le plus beau",
         "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat temporibus laboriosam reiciendis. Qui necessitatibus tempore laboriosam aliquid quibusdam rem earum laborum fugiat blanditiis pariatur! Saepe, reiciendis? Rem molestias autem quae optio obcaecati explicabo, quibusdam repellendus nobis aut sit suscipit nisi, vel voluptatum necessitatibus aperiam."
         }
         

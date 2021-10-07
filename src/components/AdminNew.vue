@@ -71,6 +71,7 @@ export default {
   methods:{
       addArticle(){
           this.$store.commit('addArticle',{id: this.getPosts.posts.length, titre:this.titre, intro:this.intro, date:this.formDate, author:this.author, contenu:this.contenu})
+          alert('Post Ajouter')
       },
       resetForm() {
           this.titre = this.intro = this.date = this.author = this.contenu = ""
